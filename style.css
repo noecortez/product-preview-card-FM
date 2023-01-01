@@ -1,0 +1,102 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Montserrat, serif;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  padding: 20px;
+}
+
+h1 {
+  font-family: Fraunces, sans-serif;
+  color: hsl(212, 21%, 14%);
+  margin: 0.5rem 0;
+}
+
+p {
+  color: hsl(228, 12%, 48%);
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: hsl(158, 36%, 37%);
+  color: #fff;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button:hover {
+  background-color: hsl(157, 40%, 26%);
+}
+
+button img {
+  margin-right: 6px;
+}
+
+.card {
+  background-color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 6px;
+}
+
+.card .card-header img {
+  width: 100%;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-type {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.product-prices {
+  display: flex;
+  align-items: center;
+}
+
+.product-prices .price {
+  color: hsl(158, 36%, 37%);
+  margin: 16px 0;
+}
+
+.product-prices .price-old {
+  text-decoration: line-through;
+  margin-left: 20px;
+}
+
+.image-desktop {
+  display: none;
+}
+
+@media screen and (min-width: 520px) {
+  .card {
+    grid-template-columns: 1fr 1fr;
+    max-width: 560px;
+  }
+  .image-mobile {
+    display: none;
+  }
+  .image-desktop {
+    display: block;
+    height: 100%;
+    border-radius: 6px 0px 0px 6px;
+  }
+}
