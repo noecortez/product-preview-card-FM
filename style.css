@@ -45,14 +45,14 @@ button img {
   margin-right: 6px;
 }
 
-.card {
+main {
   background-color: #fff;
   display: grid;
   grid-template-columns: 1fr;
   border-radius: 6px;
 }
 
-.card .card-header img {
+main .card-header img {
   width: 100%;
 }
 
@@ -87,7 +87,7 @@ button img {
 }
 
 @media screen and (min-width: 520px) {
-  .card {
+  main {
     grid-template-columns: 1fr 1fr;
     max-width: 560px;
   }
