@@ -56,6 +56,10 @@ main .card-header img {
   width: 100%;
 }
 
+.image-mobile {
+  border-radius: 6px 6px 0px 0px;
+}
+
 .card-body {
   padding: 20px;
   display: flex;
